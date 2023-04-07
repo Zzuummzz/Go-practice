@@ -12,5 +12,5 @@ func main() {
 	d, _ := time.ParseDuration(s)
 
 	//Print duration in minutes
-	fmt.Println(s, " = ", d.Minutes())
+	fmt.Println(s, "=", d.Minutes(), "min")
 }
