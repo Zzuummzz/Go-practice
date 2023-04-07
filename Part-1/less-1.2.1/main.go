@@ -11,6 +11,6 @@ func main() {
 	fmt.Scan(&s)
 	d, _ := time.ParseDuration(s)
 
-	//Print splitted duration
+	//Print duration in minutes
 	fmt.Println(s, " = ", d.Minutes())
 }
