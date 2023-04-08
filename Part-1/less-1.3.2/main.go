@@ -6,9 +6,7 @@ import (
 )
 
 func main() {
-	var (
-		number int
-	)
+	var number int
 
 	// Reading parameters from Stdin
 	_, err := fmt.Scanf("%d", &number)
@@ -19,10 +17,7 @@ func main() {
 
 	//Calculating result
 	counter := make(map[int]int)
-	for ; ; number /= 10 {
-		if number/10 == 0 && number%10 == 0 {
-			break
-		}
+	for ; number > 0; number /= 10 {
 		counter[number%10]++
 	}
 
